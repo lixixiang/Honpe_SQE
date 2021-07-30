@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_42dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/_10dp"
+    android:paddingEnd="@dimen/_10dp"
+    android:paddingBottom="@dimen/_10dp"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@mipmap/ic_down_white"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="serif-monospace"
+        android:textSize="@dimen/_16sp"
+        android:text="深圳"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/_10dp"
+        android:layout_marginEnd="@dimen/_10dp"
+        android:textStyle="bold" />
+
+    <com.flyco.roundview.RoundRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:rv_backgroundColor="@color/white"
+        android:layout_marginEnd="@dimen/_15dp"
+        app:rv_cornerRadius="@dimen/_5dp">
+
+        <TextView
+            android:id="@+id/tv_search_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_toStartOf="@+id/ll_search"
+            android:drawableStart="@drawable/smssdk_search"
+            android:drawablePadding="@dimen/_10dp"
+            android:hint="3D打印"/>
+
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="@dimen/_05dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_5dp"
+                android:layout_marginEnd="@dimen/_10dp"
+                android:layout_marginBottom="@dimen/_5dp"
+                android:layout_marginTop="@dimen/_5dp"
+                android:background="@color/grey"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10dp"
+                android:fontFamily="serif-monospace"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorPrimary"
+                android:text="搜索" />
+        </LinearLayout>
+
+
+    </com.flyco.roundview.RoundRelativeLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

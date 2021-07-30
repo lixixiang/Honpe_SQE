@@ -1,0 +1,74 @@
+[
+  {
+    "ico": "ic_home_mode00",
+    "sort": "0",
+    "num": "0",
+    "title": "外协招标",
+    "isEnable": true
+  },
+  {
+    "ico": "ic_home_mode01",
+    "sort": "1",
+    "num": "0",
+    "title": "供应商管理",
+    "isEnable": true
+  },
+  {
+    "ico": "ic_home_mode02",
+    "sort": "2",
+    "num": "0",
+    "title": "订单管理",
+    "isEnable": true
+  },
+  {
+    "ico": "ic_home_mode03",
+    "sort": "3",
+    "num": "0",
+    "title": "快速接单",
+    "isEnable": true
+  },
+  {
+    "ico": "ic_home_mode04",
+    "sort": "4",
+    "num": "0",
+    "title": "平台报价",
+    "isEnable": true
+  },
+  {
+    "ico": "ic_home_mode05",
+    "sort": "5",
+    "num": "0",
+    "title": "生产管理",
+    "isEnable": true
+  },
+  {
+    "ico": "ic_home_mode06",
+    "sort": "6",
+    "num": "0",
+    "title": "物料管理",
+    "isEnable": true
+  },
+  {
+    "ico": "ic_home_mode07",
+    "sort": "7",
+    "num": "0",
+    "title": "品质管理",
+    "isEnable": true
+  },
+  {
+    "ico": "ic_home_mode08",
+    "sort": "8",
+    "num": "0",
+    "title": "资源中心",
+    "isEnable": true
+  }
+]
+
+
+
+
+
+
+
+
+

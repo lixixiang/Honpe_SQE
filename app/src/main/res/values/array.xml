@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dinnering_detail">
+        <item>种&#8195;&#8195;类</item>
+        <item>招标日期</item>
+        <item>订&#8194;单&#8194;号</item>
+        <item>报&#8194;价&#8194;人</item>
+        <item>报价金额</item>
+        <item>中标状态</item>
+        <item>驳回原因</item>
+    </string-array>
+    <string-array name="tab_title">
+        <item>全部</item>
+        <item>待处理</item>
+        <item>已中标</item>
+        <item>未中标</item>
+    </string-array>
+</resources>

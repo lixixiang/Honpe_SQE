@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_table_title"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_40dp"
+    android:background="@color/thin_green"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="@dimen/_5dp">
+
+    <TextView
+        android:id="@+id/item_1"
+        style="@style/cssTextSizeColor"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="序号"
+        android:visibility="gone" />
+
+    <TextView
+        style="@style/cssTextSizeColor"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.25"
+        android:gravity="center"
+        android:text="物料编号" />
+
+    <TextView
+        style="@style/cssTextSizeColor"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.25"
+        android:gravity="center"
+        android:text="规格" />
+
+    <TextView
+        style="@style/cssTextSizeColor"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.25"
+        android:text="材质" />
+
+    <TextView
+        style="@style/cssTextSizeColor"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.25"
+        android:text="数量" />
+</LinearLayout>

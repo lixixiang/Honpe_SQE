@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="@dimen/_12sp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_1dp"
+        android:layout_weight="9"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/_1dp">
+
+            <TextView
+                android:id="@+id/tv_part_num"
+                style="@style/cssTextSizeColor"
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="@dimen/_1dp"
+                android:layout_weight="1.5"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="02ET51"
+                android:padding="@dimen/_5dp"
+                android:textSize="@dimen/_12sp" />
+
+            <TextView
+                android:id="@+id/tv_size"
+                style="@style/cssTextSizeColor"
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="@dimen/_1dp"
+                android:layout_weight="1.5"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="109x16x30"
+                android:padding="@dimen/_5dp"
+                android:textSize="@dimen/_12sp" />
+
+            <TextView
+                android:id="@+id/tv_texture"
+                style="@style/cssTextSizeColor"
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="@dimen/_1dp"
+                android:layout_weight="1.5"
+                android:background="@color/white"
+                android:text="纯PEI琥珀色"
+                android:padding="@dimen/_5dp"
+                android:textSize="@dimen/_12sp" />
+
+            <TextView
+                android:id="@+id/tv_unit"
+                style="@style/cssTextSizeColor"
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_1dp"
+                android:layout_weight="1.5"
+                android:background="@color/white"
+                android:text="1"
+                android:padding="@dimen/_5dp"
+                android:textSize="@dimen/_12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/_1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="单价:" />
+
+                <TextView
+                    android:id="@+id/tv_unit_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_8dp"
+                    android:background="@drawable/shape_rect_grey_r10d"
+                    android:gravity="center"
+                    android:hint="输入含税金额"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/_1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="税率:" />
+
+               <RadioGroup
+                   android:id="@+id/rg_rate"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+
+                   <RadioButton
+                       android:id="@+id/rb_3"
+                       android:layout_width="@dimen/_50dp"
+                       android:layout_height="30dp"
+                       android:layout_marginStart="10dp"
+                       android:layout_marginTop="@dimen/_10dp"
+                       android:layout_marginBottom="@dimen/_10dp"
+                       android:gravity="center"
+                       android:button="@null"
+                       android:background="@drawable/round_rectangle_bg2"
+                       android:paddingBottom="2dp"
+                       android:paddingLeft="5dp"
+                       android:paddingRight="5dp"
+                       android:paddingTop="2dp"
+                       android:text="3%"
+                       android:textColor="@drawable/tag_text_selector2" />
+
+                   <RadioButton
+                       android:id="@+id/rb_13"
+                       android:layout_width="@dimen/_50dp"
+                       android:layout_height="30dp"
+                       android:layout_marginStart="10dp"
+                       android:layout_marginTop="@dimen/_10dp"
+                       android:layout_marginBottom="@dimen/_10dp"
+                       android:gravity="center"
+                       android:button="@null"
+                       android:background="@drawable/round_rectangle_bg2"
+                       android:paddingBottom="2dp"
+                       android:paddingLeft="5dp"
+                       android:paddingRight="5dp"
+                       android:paddingTop="2dp"
+                       android:text="13%"
+                       android:checked="false"
+                       android:textColor="@drawable/tag_text_selector2" />
+               </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/orange"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="备注"
+                android:textSize="@dimen/_12sp" />
+
+            <TextView
+                android:id="@+id/tv_note"
+                style="@style/cssTextSizeColor"
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.5"
+                android:gravity="start"
+                android:text="后处理要求:纯PEI琥珀色；"
+                android:textColor="@color/colorAccent" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

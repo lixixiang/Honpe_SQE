@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:focusable="true"
+        android:paddingStart="@dimen/_20dp"
+        android:paddingEnd="@dimen/_20dp"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/css_title"
+            android:layout_width="@dimen/_70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="原始密码"
+            android:textColor="@color/grey_home"
+            android:textSize="16sp" />
+
+        <com.shenzhen.honpe.honpe_sqe.widget.DJEditText
+            android:id="@+id/css_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:layout_toEndOf="@+id/css_title"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_1dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey_a5"
+            android:textCursorDrawable="@drawable/shape_green"
+            android:textSize="16sp" />
+
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey_a5"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:focusable="true"
+        android:paddingStart="@dimen/_20dp"
+        android:paddingEnd="@dimen/_20dp"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/css_title2"
+            android:layout_width="@dimen/_70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="新&#8194;密&#8194;码"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <com.shenzhen.honpe.honpe_sqe.widget.DJEditText
+            android:id="@+id/css_et2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:layout_toEndOf="@+id/css_title2"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:inputType="textPassword"
+            android:padding="@dimen/_1dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey_a5"
+            android:textCursorDrawable="@drawable/shape_green"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/view_line2"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey_a5"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:focusable="true"
+        android:paddingStart="@dimen/_20dp"
+        android:paddingEnd="@dimen/_20dp"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/css_title3"
+            android:layout_width="@dimen/_70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="确认密码"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <com.shenzhen.honpe.honpe_sqe.widget.DJEditText
+            android:id="@+id/css_et3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_toEndOf="@+id/css_title3"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:inputType="textPassword"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_1dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey_a5"
+            android:textCursorDrawable="@drawable/shape_green"
+            android:textSize="16sp" />
+
+
+        <View
+            android:id="@+id/view_line3"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey_a5"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:textColor="@color/grey_a5"
+        android:textSize="13sp" />
+    <include layout="@layout/css_btn_sure" />
+
+
+</LinearLayout>

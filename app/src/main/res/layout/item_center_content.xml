@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_10dp"
+        android:paddingRight="@dimen/_10dp">
+        <LinearLayout
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1.5">
+
+            <TextView
+                android:id="@+id/tv_date"
+                style="@style/AppTheme.Label"
+                android:layout_height="37dp"
+                android:layout_marginTop="30dp"
+                android:text="21:44"
+                android:textColor="@android:color/tertiary_text_dark" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="@dimen/_05dp"
+                    android:layout_height="30dp"
+                    android:background="#cccccc"/>
+                <com.flyco.roundview.RoundFrameLayout
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    app:rv_isRadiusHalfHeight="true"
+                    app:rv_strokeColor="#cccccc"
+                    app:rv_strokeWidth="@dimen/_05dp">
+                    <ImageView
+                        android:id="@+id/iv_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_10dp"
+                        android:contentDescription="@string/app_name"
+                        android:tint="#cccccc"
+                        app:srcCompat="@drawable/ic_feed_list_mail"
+                        tools:ignore="UseAppTint" />
+                </com.flyco.roundview.RoundFrameLayout>
+                <View
+                    android:layout_width="@dimen/_05dp"
+                    android:layout_height="match_parent"
+                    android:background="#cccccc"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.flyco.roundview.RoundLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_weight="4"
+            android:layout_marginBottom="@dimen/_5dp"
+            android:orientation="vertical"
+            android:padding="@dimen/_10dp"
+            app:rv_strokeColor="#cccccc"
+            app:rv_strokeWidth="@dimen/_05dp"
+            app:rv_cornerRadius="@dimen/_5dp">
+<!--            <TextView style="@style/AppTheme.Label.Title"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:textColor="@android:color/tertiary_text_dark"-->
+<!--                android:text="Steffen Norgaard Andersen"/>-->
+            <include layout="@layout/item_root_node" />
+<!--            <TextView style="@style/AppTheme.Label.Description"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:layout_marginTop="@dimen/_5dp"-->
+<!--                android:textColor="@android:color/tertiary_text_dark"-->
+<!--                android:text="Lorem ipsum dolor sit amet , consecteur adipiscing elit, sed do eiusmod tempor incidi-dunt ut labore et dlore magna aliqua. Ut enim ad minim veniam, sed do eiusmod quis nostrud exrcitation."/>-->
+        </com.flyco.roundview.RoundLinearLayout>
+    </LinearLayout>
+</LinearLayout>

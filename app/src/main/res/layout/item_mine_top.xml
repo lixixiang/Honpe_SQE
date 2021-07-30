@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:paddingTop="@dimen/_15dp"
+    android:paddingStart="@dimen/_10dp"
+    android:paddingEnd="@dimen/_10dp"
+    android:layout_marginBottom="@dimen/_1dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="我的订单"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="查看全部"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/_12sp"/>
+
+        <ImageView
+            android:id="@+id/iv_right_directory"
+            android:layout_width="@dimen/_20dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/right"/>
+    </LinearLayout>
+
+</RelativeLayout>

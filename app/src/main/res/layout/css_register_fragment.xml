@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <com.shenzhen.honpe.honpe_sqe.widget.MyScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginBottom="@dimen/_1dp"
+                android:padding="@dimen/_10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_5dp"
+                    android:paddingTop="@dimen/_5dp"
+                    android:paddingEnd="@dimen/_5dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_14sp" />
+
+                <TextView
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="账号"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/_14sp" />
+
+                <com.shenzhen.honpe.honpe_sqe.widget.DJEditText
+                    android:id="@+id/et_account"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/color_cursor_black"
+                    android:background="@drawable/shape_rect_white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginBottom="@dimen/_1dp"
+                android:padding="@dimen/_10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_5dp"
+                    android:paddingTop="@dimen/_5dp"
+                    android:paddingEnd="@dimen/_5dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_14sp" />
+
+                <TextView
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="姓名"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/_14sp" />
+
+                <com.shenzhen.honpe.honpe_sqe.widget.DJEditText
+                    android:id="@+id/et_name"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/color_cursor_black"
+                    android:background="@drawable/shape_rect_white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginBottom="@dimen/_1dp"
+                android:padding="@dimen/_10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_5dp"
+                    android:paddingTop="@dimen/_5dp"
+                    android:paddingEnd="@dimen/_5dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_14sp" />
+
+                <TextView
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="密码"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/_14sp" />
+
+                <com.shenzhen.honpe.honpe_sqe.widget.DJEditText
+                    android:id="@+id/et_password"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:textCursorDrawable="@drawable/color_cursor_black"
+                    android:background="@drawable/shape_rect_white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginBottom="@dimen/_1dp"
+                android:padding="@dimen/_10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_5dp"
+                    android:paddingTop="@dimen/_5dp"
+                    android:paddingEnd="@dimen/_5dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_14sp" />
+
+                <TextView
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="邮箱"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/_14sp" />
+
+                <com.shenzhen.honpe.honpe_sqe.widget.DJEditText
+                    android:id="@+id/et_email"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:singleLine="true"
+                    android:inputType="textEmailAddress"
+                    android:textCursorDrawable="@drawable/color_cursor_black"
+                    android:background="@drawable/shape_rect_white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginBottom="@dimen/_1dp"
+                android:padding="@dimen/_10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_5dp"
+                    android:paddingTop="@dimen/_5dp"
+                    android:paddingEnd="@dimen/_5dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_14sp" />
+
+                <TextView
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="手机号"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/_14sp" />
+
+                <com.shenzhen.honpe.honpe_sqe.widget.DJEditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:singleLine="true"
+                    android:inputType="phone"
+                    android:maxLines="11"
+                    android:textCursorDrawable="@drawable/color_cursor_black"
+                    android:background="@drawable/shape_rect_white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginBottom="@dimen/_1dp"
+                android:padding="@dimen/_10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_5dp"
+                    android:paddingTop="@dimen/_5dp"
+                    android:paddingEnd="@dimen/_5dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_14sp" />
+
+                <TextView
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="公司名称"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/_14sp" />
+
+                <com.shenzhen.honpe.honpe_sqe.widget.DJEditText
+                    android:id="@+id/et_company_name"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/color_cursor_black"
+                    android:background="@drawable/shape_rect_white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginBottom="@dimen/_1dp"
+                android:padding="@dimen/_10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_5dp"
+                    android:paddingTop="@dimen/_5dp"
+                    android:paddingEnd="@dimen/_5dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_14sp" />
+
+                <TextView
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="公司简称"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/_14sp" />
+
+                <com.shenzhen.honpe.honpe_sqe.widget.DJEditText
+                    android:id="@+id/et_company_simple_name"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/color_cursor_black"
+                    android:background="@drawable/shape_rect_white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginBottom="@dimen/_1dp"
+                android:padding="@dimen/_10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_5dp"
+                    android:paddingTop="@dimen/_5dp"
+                    android:paddingEnd="@dimen/_5dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_14sp" />
+
+                <TextView
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="组织机构代码"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/_14sp" />
+
+                <com.shenzhen.honpe.honpe_sqe.widget.DJEditText
+                    android:id="@+id/et_organizingCode"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/color_cursor_black"
+                    android:background="@drawable/shape_rect_white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginBottom="@dimen/_1dp"
+                android:padding="@dimen/_10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_5dp"
+                    android:paddingTop="@dimen/_5dp"
+                    android:paddingEnd="@dimen/_5dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_14sp" />
+
+                <TextView
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="税务登记代码"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/_14sp" />
+
+                <com.shenzhen.honpe.honpe_sqe.widget.DJEditText
+                    android:id="@+id/et_tax_ID"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/color_cursor_black"
+                    android:background="@drawable/shape_rect_white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginBottom="@dimen/_1dp"
+                android:padding="@dimen/_10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_5dp"
+                    android:paddingTop="@dimen/_5dp"
+                    android:paddingEnd="@dimen/_5dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_14sp" />
+
+                <TextView
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="对公银行"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/_14sp" />
+
+                <com.shenzhen.honpe.honpe_sqe.widget.DJEditText
+                    android:id="@+id/et_contrary_bank"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/color_cursor_black"
+                    android:background="@drawable/shape_rect_white" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginBottom="@dimen/_1dp"
+                android:padding="@dimen/_10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_5dp"
+                    android:paddingTop="@dimen/_5dp"
+                    android:paddingEnd="@dimen/_5dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_14sp" />
+
+                <TextView
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="对公银行"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/_14sp" />
+
+                <com.shenzhen.honpe.honpe_sqe.widget.DJEditText
+                    android:id="@+id/et_contrary_account"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/color_cursor_black"
+                    android:background="@drawable/shape_rect_white" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginBottom="@dimen/_1dp"
+                android:padding="@dimen/_10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_5dp"
+                    android:paddingTop="@dimen/_5dp"
+                    android:paddingEnd="@dimen/_5dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_14sp" />
+
+                <TextView
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="联系地址"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/_14sp" />
+
+                <com.shenzhen.honpe.honpe_sqe.widget.DJEditText
+                    android:id="@+id/et_address"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/color_cursor_black"
+                    android:background="@drawable/shape_rect_white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginBottom="@dimen/_1dp"
+                android:padding="@dimen/_10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_5dp"
+                    android:paddingTop="@dimen/_5dp"
+                    android:paddingEnd="@dimen/_5dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_14sp" />
+
+                <TextView
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="供应分类(可多选)"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/_14sp" />
+
+                <TextView
+                    android:id="@+id/et_supply_classification"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/color_cursor_black"
+                    android:background="@drawable/shape_rect_white" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginBottom="@dimen/_1dp"
+                android:padding="@dimen/_10dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingStart="@dimen/_5dp"
+                        android:paddingTop="@dimen/_5dp"
+                        android:paddingEnd="@dimen/_5dp"
+                        android:text="*"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/_14sp" />
+
+                    <TextView
+                        android:layout_width="@dimen/_0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="上传营业执照"
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/_14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/iv_camera_business"
+                        android:layout_width="@dimen/_50dp"
+                        android:layout_height="@dimen/_50dp"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/selector_image_add"/>
+
+                    <ImageView
+                        android:id="@+id/iv_upload_business"
+                        android:layout_width="@dimen/_50dp"
+                        android:layout_height="@dimen/_50dp"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:scaleType="fitXY"
+                        android:layout_marginStart="@dimen/_15dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginBottom="@dimen/_1dp"
+                android:padding="@dimen/_10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingStart="@dimen/_5dp"
+                        android:paddingTop="@dimen/_5dp"
+                        android:paddingEnd="@dimen/_5dp"
+                        android:text="*"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/_14sp" />
+
+                    <TextView
+                        android:layout_width="@dimen/_0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="上传组织机构证书"
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/_14sp" />
+
+
+                </LinearLayout>
+
+                   <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/iv_camera_organization"
+                        android:layout_width="@dimen/_50dp"
+                        android:layout_height="@dimen/_50dp"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/selector_image_add"/>
+                       <ImageView
+                           android:id="@+id/iv_upload_organization"
+                           android:layout_width="@dimen/_50dp"
+                           android:layout_height="@dimen/_50dp"
+                           android:layout_marginTop="@dimen/_10dp"
+                           android:layout_marginStart="@dimen/_15dp"
+                           android:scaleType="fitXY" />
+                   </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginBottom="@dimen/_1dp"
+                android:padding="@dimen/_10dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingStart="@dimen/_5dp"
+                        android:paddingTop="@dimen/_5dp"
+                        android:paddingEnd="@dimen/_5dp"
+                        android:text="*"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/_14sp" />
+
+                    <TextView
+                        android:layout_width="@dimen/_0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="上传税务登记证书"
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/_14sp" />
+                </LinearLayout>
+
+                   <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/iv_camera_tax_certificate"
+                        android:layout_width="@dimen/_50dp"
+                        android:layout_height="@dimen/_50dp"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/selector_image_add"/>
+                       <ImageView
+                           android:id="@+id/iv_upload_tax_certificate"
+                           android:layout_width="@dimen/_50dp"
+                           android:layout_height="@dimen/_50dp"
+                           android:layout_marginTop="@dimen/_10dp"
+                           android:scaleType="fitXY"
+                           android:layout_marginStart="@dimen/_15dp" />
+                   </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/register_foot_view" />
+        </LinearLayout>
+    </com.shenzhen.honpe.honpe_sqe.widget.MyScrollView>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

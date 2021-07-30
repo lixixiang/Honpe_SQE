@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_48dp"
+    android:padding="@dimen/_10dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="@dimen/_30dp"
+        android:layout_height="@dimen/_30dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_search" />
+
+    <LinearLayout
+        android:id="@+id/ll_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_frame_red"
+            android:text="NEW"
+            android:layout_gravity="bottom"
+            android:textColor="@color/google_red"
+            android:layout_marginEnd="@dimen/_5dp"
+            android:textSize="@dimen/_12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2021-01"
+            android:gravity="bottom"
+            android:textSize="@dimen/_16sp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/_25dp"
+        android:layout_height="@dimen/_25dp"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_toEndOf="@+id/ll_date"
+        android:src="@mipmap/ic_down" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_message"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消息"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background"/>
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+include ':zbarlibary'
+include ':imagepicker'
+include ':bgBanner'
+include ':pickview'
+include ':wheelview'
+include ':crop'
+include ':app'
+rootProject.name = "Honpe_SQE"

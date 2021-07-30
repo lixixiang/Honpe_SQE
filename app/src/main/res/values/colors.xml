@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue_dark">#1e82d2</color>
+    <color name="colorPrimary">#0EAAAC</color>
+    <color name="colorPrimaryNormal">#048181</color>
+    <color name="alpha_colorPrimaryNormal">#83048181</color>
+    <color name="colorPrimaryDark">#0D5959</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="google_red">#EA4335</color>
+    <color name="red">#ff0006</color>
+    <!--灰色-->
+    <color name="gray">#14ffffff</color>
+    <color name="grey">#727272</color>
+    <color name="grey_c9">#85FFFFFF</color>
+    <color name="grey_dark">#575757</color>
+    <color name="background">#f5f5f5</color>
+    <color name="grey_e">#EEEEEE</color>
+    <color name="grey_grid_line">#e5e5e5</color>
+    <color name="grey_home">#D0D0D0</color>
+    <color name="grey_a5">#A5A5A5</color>
+    <color name="text_normal_color">#7D7B88</color>
+    <color name="light_black">#fd383838</color>
+    <color name="color_242">#f2f2f2</color>
+    <!--蓝色 -->
+    <color name="alpha_blue">#8d03a9f4</color>
+    <!--绿色-->
+    <color name="green">#25ae5f</color>
+    <color name="thin_green">#BC7EAF92</color>
+    <color name="green_38AE80">#2c8864</color>
+    <color name="smssdk_text_green">#099A9F</color>
+    <!--白色-->
+
+    <!--蓝色 -->
+    <color name="blue_royal">#276FD3</color>
+    <color name="blue">#03affc</color>
+    <!--黄色 -->
+    <color name="orange">#FFA50A</color>
+    <color name="thin_orange">#FCD4AB</color>
+    <!--透明色-->
+    <color name="grey_alpha">#20A5A5A5</color>
+    <color name="alpha_black">#3C000000</color>
+    <color name="preview_mock">#9a000000</color>
+    <color name="im_font_color_text_hint">#abb1b6</color>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loading"
+    android:layout_width="@dimen/_300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/_20dp"
+    android:padding="@dimen/_15dp"
+    android:background="@drawable/shape_white_r6">
+
+    <TextView
+       style="@style/WrapWrap"
+        android:text="温馨提示"
+        android:textColor="@color/red"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:background="@color/background"
+        android:layout_marginTop="@dimen/_10dp"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/grey_dark"
+        android:layout_marginTop="15dp"
+        android:text="Here's a message" />
+
+    <TextView
+        android:id="@+id/btn_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_btn_green_grey"
+        android:textColor="@color/white"
+        android:paddingStart="@dimen/_40dp"
+        android:paddingEnd="@dimen/_40dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:text="@string/sure"/>
+
+</LinearLayout>

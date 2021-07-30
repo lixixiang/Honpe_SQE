@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.flyco.roundview.RoundLinearLayout
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        app:rv_backgroundColor="@color/white"
+        app:rv_cornerRadius="@dimen/_5dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/smssdk_sign" />
+
+        <TextView
+            android:id="@+id/tvToast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/error_code"
+            android:textColor="@color/smssdk_text_green"
+            android:textSize="13sp" />
+    </com.flyco.roundview.RoundLinearLayout>
+</FrameLayout>

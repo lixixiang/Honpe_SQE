@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/_10dp"
+    android:paddingBottom="@dimen/_10dp"
+    android:background="@color/white"
+    android:layout_marginBottom="@dimen/_1dp"
+    android:orientation="horizontal">
+
+   <FrameLayout
+       android:layout_width="@dimen/_0dp"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_weight="1">
+
+       <LinearLayout
+           android:id="@+id/ll_order"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:orientation="vertical">
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/iv_order_icon"
+               android:layout_width="@dimen/_50dp"
+               android:layout_height="@dimen/_50dp"
+               android:layout_gravity="center"
+               android:src="@drawable/selector_men"/>
+
+           <TextView
+               android:id="@+id/tv_orderNo"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="10B001"/>
+
+       </LinearLayout>
+
+   </FrameLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="@dimen/_1dp"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:layout_marginStart="@dimen/_10dp"
+        android:layout_marginEnd="@dimen/_10dp"/>
+
+    <LinearLayout
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_applyDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发布日期：2020-08-17 10：10"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_principal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="跟单负责人：黄志坚"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_classify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="采购分类：CNC"
+            android:textColor="@color/black"/>
+
+       <TextView
+           android:id="@+id/tv_enter_price"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="进入报价"
+           android:layout_marginTop="@dimen/_15dp"
+           android:textColor="@color/blue_dark"/>
+    </LinearLayout>
+
+    
+</LinearLayout>

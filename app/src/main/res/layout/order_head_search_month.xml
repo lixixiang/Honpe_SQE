@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/re_date_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5dp"
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal">
+
+     <TextView
+         android:id="@+id/tv_last_month"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="@color/white"
+         android:layout_centerVertical="true"
+         android:text="上个月"
+         android:layout_marginStart="@dimen/_10dp"
+         android:textSize="@dimen/_16sp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_tag_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_frame_red"
+            android:text="NEW"
+            android:layout_gravity="bottom"
+            android:textColor="@color/google_red"
+            android:layout_marginEnd="@dimen/_5dp"
+            android:textSize="@dimen/_12sp" />
+
+        <TextView
+            android:id="@+id/tv_month"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2021-01"
+            android:gravity="bottom"
+            android:textSize="@dimen/_16sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_date_down"
+        android:layout_width="@dimen/_15dp"
+        android:layout_height="@dimen/_15dp"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_marginStart="@dimen/_5dp"
+        android:layout_toEndOf="@+id/ll_date"
+        android:src="@mipmap/ic_down" />
+
+    <TextView
+        android:id="@+id/tv_next_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/_10dp"
+        android:text="下个月"
+        android:textSize="@dimen/_16sp"/>
+</RelativeLayout>

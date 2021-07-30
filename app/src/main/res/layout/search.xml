@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/_70dp"
+    android:layout_marginStart="@dimen/_10dp"
+    android:layout_marginTop="@dimen/_10dp"
+    android:visibility="gone"
+    android:background="@drawable/shape_seek"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.shenzhen.honpe.honpe_sqe.widget.DJEditText
+        android:id="@+id/et_search_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="false"
+        android:background="@drawable/shape_seek"
+        android:drawableStart="@mipmap/navigationbar_search"
+        android:padding="@dimen/_10dp"
+        android:hint="按订单号查询"
+        android:layout_toStartOf="@+id/tv_sure"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:background="@drawable/selector_btn_green_grey"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/_15dp"
+        android:textSize="@dimen/_12sp"/>
+
+</RelativeLayout>

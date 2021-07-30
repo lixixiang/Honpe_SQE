@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/tvCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <com.shenzhen.honpe.honpe_sqe.widget.ContentWithSpaceEditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/tvCountry"
+            android:background="@null"
+            android:hint="@string/smssdk_label_phone"
+            android:inputType="phone"
+            android:textCursorDrawable="@drawable/color_cursor_blue"
+            android:layout_marginStart="@dimen/_30dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/smssdk_hint_textcolor"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp">
+
+        <EditText
+            android:id="@+id/etCode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tvCode"
+            android:background="@null"
+            android:hint="@string/smssdk_identify_code"
+            android:textCursorDrawable="@drawable/color_cursor_blue"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/smssdk_hint_textcolor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/smssdk_get_code"
+            android:textColor="@color/smssdk_getcode_textcolor_selector"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/white"
+        app:hintAnimationEnabled="true"
+        app:hintTextAppearance="@style/InputStyle"
+        android:textColorHint="@color/smssdk_hint_textcolor">
+
+        <com.shenzhen.honpe.honpe_sqe.widget.DJEditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:hint="设置密码"
+            android:maxLength="18"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHint="@color/smssdk_hint_textcolor"
+            android:textCursorDrawable="@drawable/color_cursor_blue"
+            android:textSize="16sp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray" />
+    </RelativeLayout>
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/tvVerify"
+        android:layout_width="255dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        app:rv_backgroundColor="@color/smssdk_verify_textcolor_selector"
+        app:rv_cornerRadius="@dimen/_30dp"
+        android:textColor="@color/smssdk_hint_textcolor"
+        android:gravity="center"
+        android:text="@string/smssdk_verify"
+        android:textSize="14sp" />
+</LinearLayout>

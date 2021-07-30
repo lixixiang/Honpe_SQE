@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/shape_white_padding_5_radius_5">
+            <TextView
+                android:id="@+id/textAmount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@+id/tv_sure"
+                android:inputType="numberDecimal"
+                android:padding="14dp"
+                android:layout_marginEnd="@dimen/_10dp"
+                android:textColor="#333333"
+                android:hint="按数字键输入价格"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定"
+                android:layout_marginEnd="@dimen/_10dp"
+                android:background="@drawable/selector_btn_green_grey"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+
+    <com.shenzhen.honpe.honpe_sqe.widget.VirtualKeyboardView
+        android:id="@+id/pwd_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</FrameLayout>

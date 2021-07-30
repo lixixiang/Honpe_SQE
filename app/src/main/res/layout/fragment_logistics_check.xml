@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <!--标题栏-->
+    <include
+        android:id="@+id/layout_top"
+        layout="@layout/toolbar" />
+
+    <!-- 搜索栏 -->
+    <RelativeLayout
+        android:id="@+id/layout_search_express"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:layout_below="@id/layout_top">
+
+        <EditText
+            android:id="@+id/et_express_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_white_padding_5_radius_5"
+            android:hint="@string/input_express_no"
+            android:textCursorDrawable="@drawable/black"
+            android:inputType="number"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:paddingStart="10dp"
+            android:textColorHint="@color/im_font_color_text_hint" />
+
+        <Button
+            android:id="@+id/bt_qrcode"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="28dp"
+            android:background="@drawable/btn_qrcode_selector" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_search_express"
+        android:orientation="vertical">
+        <!--  快递信息列表 -->
+        <ListView
+            android:id="@+id/lv_express_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:divider="@null"
+            android:orientation="vertical"
+            android:scrollbars="none"/>
+    </LinearLayout>
+
+    <!-- 搜索列表 -->
+    <ScrollView
+        android:id="@+id/sv_search_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/layout_search_express">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <TextView
+                    android:id="@+id/tv_search_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/search_history"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#ddd" />
+
+                <!-- 重写适应Scroll -->
+                <com.shenzhen.honpe.honpe_sqe.widget.BaseListView
+                    android:id="@+id/lv_search_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE" />
+
+            <TextView
+                android:id="@+id/tv_clear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_6dp"
+                android:background="#ddd"
+                android:gravity="center"
+                android:text="@string/clear_history_record"
+                android:textColor="#555"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:background="#EEEEEE" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

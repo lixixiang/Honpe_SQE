@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_1dp"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/time1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:layout_marginStart="@dimen/_1dp"
+            android:layout_weight="1"
+            android:background="@color/grey_home"
+            android:gravity="center"
+            android:text="物品名称"
+            android:textColor="@color/grey"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:layout_marginStart="@dimen/_1dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/time1"-->
+    <!--            android:layout_width="@dimen/_0dp"-->
+    <!--            android:layout_height="@dimen/_40dp"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:background="@color/white"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:layout_marginStart="@dimen/_1dp"-->
+    <!--            android:gravity="center"-->
+    <!--            android:textSize="14sp" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/time2"-->
+    <!--            android:layout_width="@dimen/_0dp"-->
+    <!--            android:layout_height="@dimen/_40dp"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:layout_marginStart="@dimen/_1dp"-->
+    <!--            android:gravity="center"-->
+    <!--            android:background="@color/white"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="14sp" />-->
+    <!--    </LinearLayout>-->
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/ll_table2"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="@dimen/_40dp"-->
+    <!--        android:orientation="horizontal">-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/time3"-->
+    <!--            android:layout_width="@dimen/_0dp"-->
+    <!--            android:layout_height="@dimen/_40dp"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:background="@color/white"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:layout_marginStart="@dimen/_1dp"-->
+    <!--            android:gravity="center"-->
+    <!--            android:textSize="14sp" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/time4"-->
+    <!--            android:layout_width="@dimen/_0dp"-->
+    <!--            android:layout_height="@dimen/_40dp"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:background="@color/white"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:layout_marginStart="@dimen/_1dp"-->
+    <!--            android:gravity="center"-->
+    <!--            android:textSize="14sp" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/time5"-->
+    <!--            android:layout_width="@dimen/_0dp"-->
+    <!--            android:layout_height="@dimen/_40dp"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:background="@color/white"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:layout_marginStart="@dimen/_1dp"-->
+    <!--            android:gravity="center"-->
+    <!--            android:textSize="14sp" />-->
+
+</LinearLayout>

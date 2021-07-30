@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/cssTextStyleFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/_5dp"
+        android:text="周期 (天)："
+        android:textSize="@dimen/_16sp" />
+
+    <TextView
+        android:id="@+id/tv_week_date"
+        android:layout_width="@dimen/_250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rect_grey_r10d"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/_20dp"
+        android:hint="制作需要花费的时间"
+        android:inputType="number"
+        android:padding="@dimen/_5dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sp" />
+
+    <TextView
+        style="@style/cssTextStyleFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/_5dp"
+        android:text="报价单有效期："
+        android:textSize="@dimen/_16sp" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_start_end_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_start_date"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rect_grey_r10d"
+            android:gravity="center"
+            android:hint="开始时间"
+            android:inputType="number"
+            android:padding="@dimen/_5dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="至"
+            android:textColor="@color/green"
+            android:textSize="@dimen/_20sp" />
+
+        <TextView
+            android:id="@+id/tv_end_date"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rect_grey_r10d"
+            android:gravity="center"
+            android:hint="结束时间"
+            android:padding="@dimen/_5dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sp" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/cssTextStyleFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/_5dp"
+        android:text="结算方式："
+        android:textSize="@dimen/_16sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.shenzhen.honpe.honpe_sqe.widget.FlowTagLayout
+            android:id="@+id/rl_clearing_form_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/cssTextStyleFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/_5dp"
+        android:text="送货方式："
+        android:textSize="@dimen/_16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.shenzhen.honpe.honpe_sqe.widget.FlowTagLayout
+            android:id="@+id/rl_goods_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <include layout="@layout/btn_change_state" />
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+

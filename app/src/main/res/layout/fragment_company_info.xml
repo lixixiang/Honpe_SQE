@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/fl_bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/smssdk_hint_textcolor"
+                    android:textCursorDrawable="@drawable/color_cursor_blue"
+                    app:hintAnimationEnabled="true"
+                    app:hintTextAppearance="@style/InputStyle">
+
+                    <com.shenzhen.honpe.honpe_sqe.widget.DJEditText
+                        android:id="@+id/et_company_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:hint="公司（全称）"
+                        android:textColor="@android:color/white"
+                        android:textCursorDrawable="@drawable/color_cursor_blue"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/smssdk_hint_textcolor"
+                    app:hintAnimationEnabled="true"
+                    app:hintTextAppearance="@style/InputStyle">
+
+                    <com.shenzhen.honpe.honpe_sqe.widget.DJEditText
+                        android:id="@+id/et_company_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:hint="公司地址"
+                        android:inputType="text"
+                        android:textCursorDrawable="@drawable/color_cursor_blue"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/smssdk_hint_textcolor"
+                    android:textCursorDrawable="@drawable/color_cursor_blue"
+                    app:hintAnimationEnabled="true"
+                    app:hintTextAppearance="@style/InputStyle">
+
+                    <com.shenzhen.honpe.honpe_sqe.widget.DJEditText
+                        android:id="@+id/et_organizingCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:hint="组织机构代码"
+                        android:textCursorDrawable="@drawable/color_cursor_blue"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/smssdk_hint_textcolor"
+                    android:textCursorDrawable="@drawable/color_cursor_blue"
+                    app:hintAnimationEnabled="true"
+                    app:hintTextAppearance="@style/InputStyle">
+
+                    <com.shenzhen.honpe.honpe_sqe.widget.DJEditText
+                        android:id="@+id/et_tax_ID"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:hint="税务登记代码"
+                        android:textCursorDrawable="@drawable/color_cursor_blue"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/smssdk_hint_textcolor"
+                    android:textCursorDrawable="@drawable/color_cursor_blue"
+                    app:hintAnimationEnabled="true"
+                    android:layout_marginEnd="@dimen/_10dp"
+                    android:layout_toStartOf="@+id/iv_scan"
+                    app:hintTextAppearance="@style/InputStyle">
+
+                    <com.shenzhen.honpe.honpe_sqe.widget.ContentWithSpaceEditText
+                        android:id="@+id/et_contrary_bank"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:hint="对公银行卡号"
+                        android:textCursorDrawable="@drawable/color_cursor_blue"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        app:input_type="bank_card_no"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/iv_scan"
+                    android:layout_width="@dimen/_25dp"
+                    android:layout_height="@dimen/_25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/iv_scan" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/smssdk_hint_textcolor"
+                    android:textCursorDrawable="@drawable/color_cursor_blue"
+                    app:hintAnimationEnabled="true"
+                    android:layout_marginEnd="@dimen/_10dp"
+                    app:hintTextAppearance="@style/InputStyle">
+
+                    <com.shenzhen.honpe.honpe_sqe.widget.DJEditText
+                        android:id="@+id/et_bank"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:hint="对公银行自动匹配"
+                        android:textCursorDrawable="@drawable/color_cursor_blue"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="供应分类（可多选）"
+                        android:layout_marginBottom="@dimen/_10dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="13sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/et_supply_classification"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/iv_right"
+                            android:gravity="center_vertical"
+                            android:hint="点击可选择多项分类"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentStart="true"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@color/smssdk_hint_textcolor"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_right"
+                            android:layout_width="@dimen/_25dp"
+                            android:layout_height="@dimen/_25dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/right" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout
+        android:id="@+id/fl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true">
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/tvVerify"
+            android:layout_width="255dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            app:rv_backgroundColor="@color/white"
+            app:rv_textPressColor="@color/grey_c9"
+            app:rv_cornerRadius="@dimen/_100dp"
+            android:gravity="center"
+            android:text="最后一步"
+            android:textColor="@color/smssdk_verify_textcolor_selector"
+            android:textSize="14sp" />
+
+    </FrameLayout>
+
+</RelativeLayout>

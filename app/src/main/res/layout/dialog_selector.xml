@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flyco.roundview.RoundLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_300dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:rv_backgroundColor="@color/white"
+    app:rv_cornerRadius="@dimen/_5dp"
+    android:padding="@dimen/_20dp"
+    android:layout_margin="@dimen/_20dp"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/WrapWrap"
+        android:text="用户类型"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_20sp"
+        android:textStyle="bold"
+        android:textColor="@color/grey_dark"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:background="@color/background"
+        android:layout_marginBottom="@dimen/_15dp"
+        android:layout_marginTop="@dimen/_15dp"/>
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/tv_person"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50dp"
+        android:text="个人用户(默认)"
+        android:textColor="@color/white"
+        app:rv_backgroundColor="@color/smssdk_main_color"
+        app:rv_backgroundPressColor="@color/grey_e"
+
+        android:gravity="center"/>
+
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/tv_company"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50dp"
+        android:text="企业用户"
+        android:textColor="@color/white"
+        app:rv_backgroundColor="@color/blue_dark"
+        app:rv_backgroundPressColor="@color/grey_e"
+        android:layout_marginTop="@dimen/_20dp"
+        android:gravity="center"/>
+
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/tv_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50dp"
+        android:text="返回"
+        android:textColor="@color/white"
+        app:rv_backgroundColor="@color/red"
+        app:rv_backgroundPressColor="@color/grey_e"
+        android:layout_marginTop="@dimen/_20dp"
+        android:gravity="center"/>
+
+
+</com.flyco.roundview.RoundLinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColorHint="@color/smssdk_hint_textcolor"
+            android:textCursorDrawable="@drawable/color_cursor_blue"
+            app:hintAnimationEnabled="true"
+            app:hintTextAppearance="@style/InputStyle">
+
+            <com.shenzhen.honpe.honpe_sqe.widget.DJEditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:hint="昵称"
+                android:inputType="text"
+                android:textColor="@android:color/white"
+                android:textCursorDrawable="@drawable/color_cursor_blue"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray" />
+    </RelativeLayout>
+
+
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/tvVerify"
+        android:layout_width="255dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        app:rv_backgroundColor="@color/smssdk_verify_textcolor_selector"
+        app:rv_textPressColor="@color/grey_c9"
+        app:rv_cornerRadius="@dimen/_100dp"
+        android:gravity="center"
+        android:text="完成"
+        android:textColor="@color/smssdk_hint_textcolor"
+        android:textSize="14sp" />
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/rl_left"
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="#dddddd" />
+        <ImageView
+            android:id="@+id/iv_status"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="25dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/shape_circle_logistics_gray"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="15dp"
+            android:autoLink="email|phone|web"
+            android:text="正在派送途中,请您准备签收(派件人:张小建,电话:18513394441)" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center_vertical"
+            android:text="2016-10-12 08:02:18" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#9b9b9b" />
+    </LinearLayout>
+
+</LinearLayout>

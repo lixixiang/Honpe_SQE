@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_price_visible"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合计总额"
+            style="@style/cssTextStyleFont"
+            android:textSize="@dimen/_14sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_amount"
+            style="@style/TabLayoutNormalTextSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="1333"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="税额"
+            style="@style/cssTextStyleFont"
+            android:textSize="@dimen/_14sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_price_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-1333"
+            style="@style/TabLayoutNormalTextSize"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sp"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实际金额"
+            style="@style/cssTextStyleFont"
+            android:textSize="@dimen/_14sp"
+            android:textColor="@color/black"/>
+
+
+        <TextView
+            android:id="@+id/tv_actual_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1333"
+            style="@style/TabLayoutNormalTextSize"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_20sp"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

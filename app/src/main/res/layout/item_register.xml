@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_5dp"
+            android:paddingTop="@dimen/_5dp"
+            android:paddingEnd="@dimen/_5dp"
+            android:text="*"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_14sp" />
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="hello"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/_14sp" />
+
+        <com.shenzhen.honpe.honpe_sqe.widget.DJEditText
+            android:id="@+id/et_content"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/color_cursor_black"
+            android:background="@drawable/shape_rect_white" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:background="@color/background" />
+
+</LinearLayout>

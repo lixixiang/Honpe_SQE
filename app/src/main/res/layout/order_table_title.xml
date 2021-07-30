@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/_10dp"
+    android:paddingBottom="@dimen/_10dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="@dimen/_45dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        style="@style/cssTextStyleFont"
+        android:text="日期"/>
+
+    <TextView
+        android:id="@+id/item_1"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        style="@style/cssTextStyleFont"
+        android:text="订单号"/>
+
+    <TextView
+        android:id="@+id/item_2"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:gravity="center"
+        style="@style/cssTextStyleFont"
+        android:text="加工分类"/>
+
+    <TextView
+        android:id="@+id/item_3"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        style="@style/cssTextStyleFont"
+        android:text="数量"/>
+
+    <TextView
+        android:id="@+id/item_4"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:paddingStart="@dimen/_10dp"
+        style="@style/cssTextStyleFont"
+        android:text="交期"/>
+</LinearLayout>

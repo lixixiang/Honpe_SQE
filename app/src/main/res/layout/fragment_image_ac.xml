@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/fl_bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.flyco.roundview.RoundFrameLayout
+                android:id="@+id/fl_camera_business"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200dp"
+                app:rv_cornerRadius="@dimen/_15dp"
+                app:rv_backgroundColor="@color/grey_e"
+                app:rv_strokeColor="@color/grey_c9"
+                app:rv_strokeWidth="@dimen/_1dp"
+                android:layout_marginStart="@dimen/_30dp"
+                android:layout_marginTop="@dimen/_30dp"
+                android:layout_marginEnd="@dimen/_30dp">
+
+                <TextView
+                    android:id="@+id/tv_camera_business"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="点击拍摄营业执照"/>
+
+
+                <ImageView
+                    android:id="@+id/iv_camera_business"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+
+            </com.flyco.roundview.RoundFrameLayout>
+             <TextView
+                 android:id="@+id/tips_camera_business"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="@dimen/_30dp"
+                 android:layout_marginTop="@dimen/_10dp"
+                 android:layout_marginEnd="@dimen/_30dp"
+                 android:text="提示信息：拍摄时将营业执照放入相机框框内"/>
+
+            <com.flyco.roundview.RoundFrameLayout
+                android:id="@+id/fl_organize"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200dp"
+                app:rv_cornerRadius="@dimen/_15dp"
+                app:rv_backgroundColor="@color/grey_e"
+                app:rv_strokeColor="@color/grey_c9"
+                app:rv_strokeWidth="@dimen/_1dp"
+                android:layout_marginStart="@dimen/_30dp"
+                android:layout_marginTop="@dimen/_30dp"
+                android:layout_marginEnd="@dimen/_30dp">
+
+                <TextView
+                    android:id="@+id/tv_camera_organization"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="点击拍摄组织机构证书"/>
+
+
+                <ImageView
+                    android:id="@+id/iv_camera_organization"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+
+            </com.flyco.roundview.RoundFrameLayout>
+            <TextView
+                android:id="@+id/tips_camera_organization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_30dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_marginEnd="@dimen/_30dp"
+                android:text="提示信息：拍摄时将组织机构证书放入相机框框内"/>
+
+            <com.flyco.roundview.RoundFrameLayout
+                android:id="@+id/fl_license"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200dp"
+                app:rv_cornerRadius="@dimen/_15dp"
+                app:rv_backgroundColor="@color/grey_e"
+                app:rv_strokeColor="@color/grey_c9"
+                app:rv_strokeWidth="@dimen/_1dp"
+                android:layout_marginStart="@dimen/_30dp"
+                android:layout_marginTop="@dimen/_30dp"
+                android:layout_marginEnd="@dimen/_30dp">
+
+                <TextView
+                    android:id="@+id/tv_camera_tax_certificate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="点击拍摄税务登记证书"/>
+
+
+                <ImageView
+                    android:id="@+id/iv_camera_tax_certificate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+
+            </com.flyco.roundview.RoundFrameLayout>
+            <TextView
+                android:id="@+id/tips_camera_tax_certificate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_30dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_marginEnd="@dimen/_30dp"
+                android:layout_marginBottom="@dimen/_30dp"
+                android:text="提示信息：拍摄时将税务登记证书放入相机框框内"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/fl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true">
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/tvVerify"
+            android:layout_width="255dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            app:rv_backgroundColor="@color/white"
+            app:rv_textPressColor="@color/grey_c9"
+            app:rv_cornerRadius="@dimen/_100dp"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@color/smssdk_verify_textcolor_selector"
+            android:textSize="14sp" />
+
+    </FrameLayout>
+
+</RelativeLayout>

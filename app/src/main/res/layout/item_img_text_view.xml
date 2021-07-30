@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_bidding_price_detail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginBottom="@dimen/_1dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/cssTextStyleFont"
+            android:textColor="@color/gray"
+            android:text="物品名称"/>
+
+        <TextView
+            android:id="@+id/tv_goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WF20090255"
+            android:fontFamily="serif-monospace"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/_10dp"/>
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/cssTextStyleFont"
+                android:layout_marginEnd="@dimen/_100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/_10sp"
+                android:text="已中标"/>
+
+           <TextView
+               android:id="@+id/tv_money"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               style="@style/cssTextStyleFont"
+               android:text="+20000"
+               android:layout_alignParentEnd="true"
+               android:textStyle="bold"
+               android:textColor="@color/orange"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/cssTextStyleFont"
+                android:textColor="@color/gray"
+                android:text="日期"/>
+
+            <TextView
+                android:id="@+id/tv_part_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20210126"
+                style="@style/cssTextStyleFont"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/_10dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_tender_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/_12sp"
+            android:text="2021-01-22 20:11:13"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
